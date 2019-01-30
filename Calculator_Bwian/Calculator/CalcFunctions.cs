@@ -25,8 +25,7 @@ namespace Calculator
 
         public double Power(double x, double exp)
         {
-            var sum = Math.Pow(x, exp);
-            return sum;
+            return Math.Pow(x, exp);
         }
     }
 }
