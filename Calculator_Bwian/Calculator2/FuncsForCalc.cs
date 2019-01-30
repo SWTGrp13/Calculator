@@ -8,14 +8,19 @@ namespace Calculator2
 {
     public class FuncsForCalc
     {
-        public double Add(double a, double b)
+        public double Add(double a, double b) //Hey!!!
         {
             return a + b;
         }
 
-        public double Subtract(double a, double b)
+        public double Subtract(double a, double b) //NEJJJJ!!!!!!!!!!
         {
             return a - b;
+        }
+
+        public double Hey() //NEJJJJ!!!!!!!!!!
+        {
+           return 0;
         }
 
         public double Multiply(double a, double b)
