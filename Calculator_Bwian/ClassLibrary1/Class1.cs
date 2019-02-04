@@ -20,7 +20,8 @@ namespace ClassLibrary1
         [TestCase(-2, 2, 0)]
         [TestCase(1.1, 1.9, 3)]
         [TestCase(9999999999,9999999999,19999999998)]
-        [TestCase(2, 2, 0)]
+        [TestCase(2, -2, 0)]
+        [TestCase(2, 1, 3)]
         public void Add_AddaAndb_Returnsc(double a, double b, double c)
         {
             Assert.That(uut.Add(a, b), Is.EqualTo(c).Within(0.01));
