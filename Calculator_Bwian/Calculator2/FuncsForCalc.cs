@@ -18,11 +18,6 @@ namespace Calculator2
             return a - b;
         }
 
-        public double Hey() //NEJJJJ!!!!!!!!!!
-        {
-           return 0;
-        }
-
         public double Multiply(double a, double b)
         {
             return a * b;

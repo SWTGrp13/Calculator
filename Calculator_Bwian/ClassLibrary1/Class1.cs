@@ -27,13 +27,6 @@ namespace ClassLibrary1
             Assert.That(uut.Add(a, b), Is.EqualTo(c).Within(0.01));
         }
 
-        /// <TryingThings>
-        private static object[] _ToTest =
-        {
-            new object[] {typeof(FuncsForCalc), 2, 2, 4}
-        };
-        /// </TryingThings>
-
         [TestCase(2,1,2)]
         [TestCase(1,2,0.5)]
         public void Division_DivideaAndb_Returnsc(double a, double b, double c)
