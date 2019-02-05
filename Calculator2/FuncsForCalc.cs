@@ -8,6 +8,12 @@ namespace Calculator
 {
     public class FuncsForCalc
     {
+
+        public static double Mod(double a, double mod)
+        {
+            return a % mod;
+        }
+
         public static double Add(double a, double b)
         {
             return a + b;
