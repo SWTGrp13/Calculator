@@ -28,6 +28,7 @@ namespace ClassLibrary1
             Assert.That(FuncsForCalc.Add(a, b), Is.EqualTo(c).Within(0.01));
         }
 
+        [TestCase(2, 2, 1)]
         [TestCase(2,1,2)]
         [TestCase(1,2,0.5)]
         public void Division_DivideaAndb_Returnsc(double a, double b, double c)
