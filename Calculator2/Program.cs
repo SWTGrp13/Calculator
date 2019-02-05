@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Linq;
+using Calculator;
 
 namespace Calculator2
 {
-    class Program
+    class Program : FuncsForCalc
     {
         private static readonly string[] Operations = {"+", "-", "*", "/", "^", "%"};
 
@@ -13,29 +14,29 @@ namespace Calculator2
             double firstNumber = SetNumber("Type you first number : ");
             double secondNumber = SetNumber("Type you second number: ");
 
-            string stringOperation = SetOperation("Enter the operation + (Add), - (Subtract), * (Multiply) or ^ (Power):");
+            string stringOperation = SetOperation("Enter the operation + (Add), - (Subtract), * (Multiply), / (Division) or ^ (Power):");
 
             switch (stringOperation)
             {
                 case "+":
                 case "Add":
-                    result = firstNumber + secondNumber;
+                    result = Add(firstNumber, secondNumber);
                     break;
                 case "-":
                 case "Subtract":
-                    result = firstNumber - secondNumber;
+                    result = Subtract(firstNumber, secondNumber);
                     break;
                 case "*":
                 case "Multiply":
-                    result = firstNumber * secondNumber;
+                    result = Multiply(firstNumber, secondNumber);
                     break;
-               // case "/":
-               // case "division":
-               //     result = firstNumber / secondNumber;
-               //     break;
+                case "/":
+                case "division":
+                    result = Division(firstNumber, secondNumber);
+                    break;
                 case "^":
                 case "Power":
-                    result = Math.Pow(firstNumber, secondNumber);
+                    result = Power(firstNumber, secondNumber);
                     break;
             }
 
