@@ -15,7 +15,7 @@ namespace Calculator
 
         public static double Subtract(double a, double b)
         {
-            return a - b;
+            return a -= b;
         }
 
         public static double Multiply(double a, double b)
