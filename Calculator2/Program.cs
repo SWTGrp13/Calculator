@@ -11,8 +11,8 @@ namespace Calculator2
         static void Main(string[] args)
         {
             double result = 0;
-            double firstNumber = SetNumber("Type you first number : ");
-            double secondNumber = SetNumber("Type you second number: ");
+            double firstNumber = SetNumber("Type your first number : ");
+            double secondNumber = SetNumber("Type your second number: ");
 
             string stringOperation = SetOperation("Enter the operation + (Add), - (Subtract), * (Multiply), / (Division) or ^ (Power):");
 
@@ -69,7 +69,7 @@ namespace Calculator2
             string tempInput = Console.ReadLine();
             while (!IsValidOperation(tempInput))
             {
-                Console.WriteLine("Incorrect input !");
+                Console.WriteLine("Incorrect input !, try again");
                 Console.Write(outputText);
                 tempInput = Console.ReadLine();
             }
