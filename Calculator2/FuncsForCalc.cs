@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Dynamic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Calculator
 {
@@ -11,10 +6,9 @@ namespace Calculator
     {
         private double sum;
         
-        private void updateSum(double result)
+        private double updateSum(double result)
         {
-
-            sum = sum + result;
+            return sum = sum + result;
         }
 
         public double Accumulator
@@ -25,33 +19,28 @@ namespace Calculator
 
         public double Mod(double a, double mod)
         {
-            updateSum(a % mod);
-            return a % mod;
+            return updateSum(a % mod);
         }
 
         public double Add(double a, double b)
         {
-            updateSum(a+b);
-            return a + b;
+            return updateSum(a+b);
         }
 
         public double Subtract(double a, double b)
         {
-            updateSum(a -= b);
-            return a -= b;
+            return updateSum(a -= b);
         }
 
         public double Multiply(double a, double b)
         {
-            updateSum(a*b);
-            return a * b;
+            return updateSum(a*b);
         }
 
         public double Power(double x, double exp)
         {
             Accumulator = Math.Pow(x, exp);
-            updateSum(Accumulator);
-            return Accumulator;
+            return updateSum(Accumulator);
         }
 
        public double Division(double a, double b)
@@ -62,12 +51,9 @@ namespace Calculator
             }
             else
             {
-                updateSum(a/b);
-                return a / b;
+                return updateSum(a/b);
             }
         }
-
-
 
     }
 }
