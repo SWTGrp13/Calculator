@@ -122,9 +122,10 @@ namespace ClassLibrary1
         public void GetSum_Clear_Add2and2ThenClear_Expects0()
         {
             var uutAdd = new FuncsForCalc();
+            var uutReset = new FuncsForCalc();
 
             uutAdd.Add(2, 2);
-            uut.resetSum();
+            uutAdd.resetSum();
 
             Assert.That(uutAdd.getSum(), Is.EqualTo(0));
         }
