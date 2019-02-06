@@ -7,9 +7,9 @@ using NUnit.Framework.Constraints;
 
 namespace Calculator2
 {
-    class Program
+    public class Program
     {
-        private static readonly string[] Operations = {"+", "-", "*", "/", "^", "%","STOP","C"};
+        private static readonly string[] Operations = {"+", "-", "*", "/", "^", "%", "STOP", "C"};
 
         static void Main(string[] args)
         {
@@ -83,7 +83,6 @@ namespace Calculator2
                 Console.Write(outputText);
                 tempInput = Console.ReadLine();
             }
-
             return tempInput;
         }
 
@@ -132,13 +131,9 @@ namespace Calculator2
                         break;
                 }
 
-                
                 Console.WriteLine("Result: " + result);
                 
                 calcLoop(calculator);
-
-        }
-
-        
+        }        
     }
 }

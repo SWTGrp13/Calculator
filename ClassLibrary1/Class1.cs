@@ -1,6 +1,7 @@
 ﻿using NUnit.Framework;
 using System;
 using Calculator;
+using Calculator2;
 
 
 namespace ClassLibrary1
@@ -130,15 +131,19 @@ namespace ClassLibrary1
             Assert.That(uutAdd.getSum(), Is.EqualTo(0));
         }
 
-        [TestCase(5,6,"c")]
+        [TestCase(5, 6, "c")]
         public void resetSumAfterAdding_sumEqualsToZero(double a, double b,string c)
         {
-            var uut_reset = new FuncsForCalc();
-            uut_reset.Add(a, b);
-            uut_reset.resetSum();
+            var uutReset = new FuncsForCalc();
+            uutReset.Add(a, b);
+            uutReset.resetSum();
 
-            Assert.That(uut_reset.getSum(), Is.EqualTo(0));
-
+            Assert.That(uutReset.getSum(), Is.EqualTo(0));
         }
+
+        //TEST IF LETTER INSTEAD OF NUMBER
+        //TEST IF WRONG OPERATION
+        //TEST OF "STOP" FORCE-CLOSES
+        
     }
 }
