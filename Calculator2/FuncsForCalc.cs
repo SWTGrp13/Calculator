@@ -4,7 +4,8 @@ namespace Calculator
 {
     public class FuncsForCalc
     {
-        private double getSum()
+
+        public double getSum()
         {
             return sum;
         }
