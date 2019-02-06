@@ -22,12 +22,6 @@ namespace Calculator
             return sum = result;
         }
 
-        public double Accumulator
-        {
-            get;
-            private set;
-        }
-
         public double Mod(double a, double mod)
         {
             return updateSum(a % mod);
@@ -50,8 +44,7 @@ namespace Calculator
 
         public double Power(double x, double exp)
         {
-            Accumulator = Math.Pow(x, exp);
-            return updateSum(Accumulator);
+            return updateSum(Math.Pow(x, exp));
         }
 
        public double Division(double a, double b)
