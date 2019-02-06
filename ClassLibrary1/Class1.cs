@@ -107,5 +107,16 @@ namespace ClassLibrary1
             Assert.That(uut_Sum.getSum(), Is.EqualTo(c));
 
         }
+
+        [TestCase(5,6,"c")]
+        public void resetSumAfterAdding_sumEqualsToZero(double a, double b,string c)
+        {
+            var uut_reset = new FuncsForCalc();
+            uut_reset.Add(a, b);
+            uut_reset.resetSum();
+
+            Assert.That(uut_reset.getSum(), Is.EqualTo(0));
+
+        }
     }
 }
