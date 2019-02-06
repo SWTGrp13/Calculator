@@ -24,16 +24,3 @@ C:\Users\fx_bn\Desktop\GIT_Repos\SWT\Calculator\Calculator_Bwian\ClassLibrary1\o
 C:\Users\fx_bn\Desktop\GIT_Repos\SWT\Calculator\Calculator_Bwian\ClassLibrary1\obj\Debug\Calc.Test.csproj.CopyComplete
 C:\Users\fx_bn\Desktop\GIT_Repos\SWT\Calculator\Calculator_Bwian\ClassLibrary1\obj\Debug\ClassLibrary1.dll
 C:\Users\fx_bn\Desktop\GIT_Repos\SWT\Calculator\Calculator_Bwian\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
-C:\Users\fx_bn\Desktop\GIT_Repos\SWT\Calculator\ClassLibrary1\bin\Debug\ClassLibrary1.dll
-C:\Users\fx_bn\Desktop\GIT_Repos\SWT\Calculator\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
-C:\Users\fx_bn\Desktop\GIT_Repos\SWT\Calculator\ClassLibrary1\bin\Debug\Calculator2.exe
-C:\Users\fx_bn\Desktop\GIT_Repos\SWT\Calculator\ClassLibrary1\bin\Debug\nunit.framework.dll
-C:\Users\fx_bn\Desktop\GIT_Repos\SWT\Calculator\ClassLibrary1\bin\Debug\Calculator2.pdb
-C:\Users\fx_bn\Desktop\GIT_Repos\SWT\Calculator\ClassLibrary1\bin\Debug\Calculator2.exe.config
-C:\Users\fx_bn\Desktop\GIT_Repos\SWT\Calculator\ClassLibrary1\bin\Debug\nunit.framework.pdb
-C:\Users\fx_bn\Desktop\GIT_Repos\SWT\Calculator\ClassLibrary1\bin\Debug\nunit.framework.xml
-C:\Users\fx_bn\Desktop\GIT_Repos\SWT\Calculator\ClassLibrary1\obj\Debug\Calc.Test.csprojAssemblyReference.cache
-C:\Users\fx_bn\Desktop\GIT_Repos\SWT\Calculator\ClassLibrary1\obj\Debug\Calc.Test.csproj.CoreCompileInputs.cache
-C:\Users\fx_bn\Desktop\GIT_Repos\SWT\Calculator\ClassLibrary1\obj\Debug\Calc.Test.csproj.CopyComplete
-C:\Users\fx_bn\Desktop\GIT_Repos\SWT\Calculator\ClassLibrary1\obj\Debug\ClassLibrary1.dll
-C:\Users\fx_bn\Desktop\GIT_Repos\SWT\Calculator\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
