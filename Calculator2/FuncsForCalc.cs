@@ -4,6 +4,11 @@ namespace Calculator
 {
     public class FuncsForCalc
     {
+        private double getSum()
+        {
+            return sum;
+        }
+
         private double sum;
         
         private double updateSum(double result)
