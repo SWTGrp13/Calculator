@@ -17,13 +17,13 @@ namespace ClassLibrary1
         }
 
         //TEST OF ADD
-        [TestCase(2, 2, 4)] 
+        [TestCase(2, 2, 4)]
         [TestCase(-2, 2, 0)]
         [TestCase(1.1, 1.9, 3)]
-        [TestCase(9999999999,9999999999,19999999998)]
+        [TestCase(9999999999, 9999999999, 19999999998)]
         [TestCase(2, -2, 0)]
         [TestCase(2, 1, 3)]
-            //Removed dublicate
+        //Removed dublicate
         public void Add_AddAandB_ReturnsC(double a, double b, double c)
             {
                 Assert.That(uut.Add(a, b), Is.EqualTo(c).Within(0.01));
@@ -88,6 +88,15 @@ namespace ClassLibrary1
         public void Accumulator_ResultAfter_Add2and2_Returns4()
         {
            // Assert.That(uut.Accumulator(), Is);
+        }
+
+        //TEST OF LETTER INSTEAD OF NUMBER
+
+        public void LetterInsteadOfNumber_ReturnsWarning()
+        {
+            var testResult = new FuncsForCalc();
+            double result = testResult.Add(5, 4);
+            Assert.Fail();
         }
     }
 }
