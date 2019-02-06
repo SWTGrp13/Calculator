@@ -89,9 +89,14 @@ namespace Calculator2
         private static void calcLoop(FuncsForCalc calculator)
         {
 
-            string stringOperation = SetOperation("Enter the operation: or stop by typing STOP + (Add), - (Subtract), * (Multiply), / (Division), % (Mod) or ^ (Power):");
+            string stringOperation = SetOperation("Enter the operation, C to reset sum or stop by typing STOP: + (Add), - (Subtract), * (Multiply), / (Division), % (Mod) or ^ (Power):");
             if (stringOperation == "STOP")
                 return;
+            else if (stringOperation == "C")
+            {
+                calculator.resetSum();
+                Main(null);
+            }
 
             Console.Write("Enter a new number: ");
             string newNumber = Console.ReadLine();

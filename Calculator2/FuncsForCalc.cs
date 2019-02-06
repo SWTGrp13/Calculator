@@ -1,10 +1,15 @@
 ﻿using System;
+using System.Security.Cryptography;
 
 namespace Calculator
 {
     public class FuncsForCalc
     {
-
+        public void resetSum()
+        {
+            sum = 0;
+        }
+        
         public double getSum()
         {
             return sum;
@@ -14,7 +19,7 @@ namespace Calculator
         
         private double updateSum(double result)
         {
-            return sum = sum + result;
+            return sum = result;
         }
 
         public double Accumulator
