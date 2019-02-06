@@ -85,10 +85,10 @@ namespace ClassLibrary1
         }
 
         //TEST OF ACCUMULATOR
-
         public void Accumulator_ResultAfter_Add2and2_Returns4()
         {
-            Assert.That(uut.Accumulator(), Is.);
+          //  double test2and2 = Add(2, 2);
+          //  Assert.That(uut.Accumulator(), Is.);
         }
     }
 }
