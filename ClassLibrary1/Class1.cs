@@ -84,14 +84,7 @@ namespace ClassLibrary1
             Assert.That(uut.Mod(a, b), Is.EqualTo(c).Within(0.01));
         }
 
-        //TEST OF ACCUMULATOR
-        public void Accumulator_ResultAfter_Add2and2_Returns4()
-        {
-           // Assert.That(uut.Accumulator(), Is);
-        }
-
         //TEST OF LETTER INSTEAD OF NUMBER
-
         public void LetterInsteadOfNumber_ReturnsWarning()
         {
             var testResult = new FuncsForCalc();
@@ -99,13 +92,41 @@ namespace ClassLibrary1
             Assert.Fail();
         }
 
+        //TEST OF GETSUM
         [TestCase(5, 4, 9)]
         public void GetSum_AddOneThenGetSum(double a, double b, double c)
         {
             var uut_Sum = new FuncsForCalc();
             uut_Sum.Add(a, b);
             Assert.That(uut_Sum.getSum(), Is.EqualTo(c));
+        }
 
+        [Test]
+        public void GetSum_OnStart_Expects0()
+        {
+            Assert.That(uut.getSum(), Is.EqualTo(0));
+        }
+
+        [Test]
+        public void GetSum_Add2and2ThenSubtract2()
+        {
+            var uutAdd = new FuncsForCalc();
+            var uutSubtract = new FuncsForCalc();
+
+            uutSubtract.Subtract(uutAdd.Add(2,2),2);
+
+            Assert.That(uutSubtract.getSum(), Is.EqualTo(2));
+        }
+
+        [Test]
+        public void GetSum_Clear_Add2and2ThenClear_Expects0()
+        {
+            var uutAdd = new FuncsForCalc();
+
+            uutAdd.Add(2, 2);
+            uut.resetSum();
+
+            Assert.That(uutAdd.getSum(), Is.EqualTo(0));
         }
     }
 }
