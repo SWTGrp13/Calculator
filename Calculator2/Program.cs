@@ -4,39 +4,44 @@ using Calculator;
 
 namespace Calculator2
 {
-    class Program : FuncsForCalc
+    class Program
     {
         private static readonly string[] Operations = {"+", "-", "*", "/", "^", "%"};
 
         static void Main(string[] args)
         {
+            FuncsForCalc calculator = new FuncsForCalc();
             double result = 0;
             double firstNumber = SetNumber("Type your first number : ");
             double secondNumber = SetNumber("Type your second number: ");
 
-            string stringOperation = SetOperation("Enter the operation + (Add), - (Subtract), * (Multiply), / (Division) or ^ (Power):");
+            string stringOperation = SetOperation("Enter the operation: + (Add), - (Subtract), * (Multiply), / (Division), % (Mod) or ^ (Power):");
 
             switch (stringOperation)
             {
                 case "+":
                 case "Add":
-                    result = Add(firstNumber, secondNumber);
+                    result = calculator.Add(firstNumber, secondNumber);
                     break;
                 case "-":
                 case "Subtract":
-                    result = Subtract(firstNumber, secondNumber);
+                    result = calculator.Subtract(firstNumber, secondNumber);
                     break;
                 case "*":
                 case "Multiply":
-                    result = Multiply(firstNumber, secondNumber);
+                    result = calculator.Multiply(firstNumber, secondNumber);
                     break;
                 case "/":
                 case "division":
-                    result = Division(firstNumber, secondNumber);
+                    result = calculator.Division(firstNumber, secondNumber);
                     break;
                 case "^":
                 case "Power":
-                    result = Power(firstNumber, secondNumber);
+                    result = calculator.Power(firstNumber, secondNumber);
+                    break;
+                case "%":
+                case "Mod":
+                    result = calculator.Mod(firstNumber, secondNumber);
                     break;
             }
 
