@@ -98,5 +98,14 @@ namespace ClassLibrary1
             double result = testResult.Add(5, 4);
             Assert.Fail();
         }
+
+        [TestCase(5, 4, 9)]
+        public void GetSum_AddOneThenGetSum(double a, double b, double c)
+        {
+            var uut_Sum = new FuncsForCalc();
+            uut_Sum.Add(a, b);
+            Assert.That(uut_Sum.getSum(), Is.EqualTo(c));
+
+        }
     }
 }
