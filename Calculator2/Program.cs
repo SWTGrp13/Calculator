@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO.Ports;
 using System.Linq;
+using System.Net.Mime;
 using Calculator;
 using NUnit.Framework.Constraints;
 
@@ -8,7 +9,7 @@ namespace Calculator2
 {
     class Program
     {
-        private static readonly string[] Operations = {"+", "-", "*", "/", "^", "%"};
+        private static readonly string[] Operations = {"+", "-", "*", "/", "^", "%","STOP","C"};
 
         static void Main(string[] args)
         {
@@ -91,7 +92,7 @@ namespace Calculator2
 
             string stringOperation = SetOperation("Enter the operation, C to reset sum or stop by typing STOP: + (Add), - (Subtract), * (Multiply), / (Division), % (Mod) or ^ (Power):");
             if (stringOperation == "STOP")
-                return;
+                System.Environment.Exit(1);
             else if (stringOperation == "C")
             {
                 calculator.resetSum();
