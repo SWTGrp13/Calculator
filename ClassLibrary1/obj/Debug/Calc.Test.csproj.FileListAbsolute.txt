@@ -37,3 +37,7 @@ C:\Users\fx_bn\Desktop\GIT_Repos\SWT\Calculator\ClassLibrary1\obj\Debug\Calc.Tes
 C:\Users\fx_bn\Desktop\GIT_Repos\SWT\Calculator\ClassLibrary1\obj\Debug\Calc.Test.csproj.CopyComplete
 C:\Users\fx_bn\Desktop\GIT_Repos\SWT\Calculator\ClassLibrary1\obj\Debug\ClassLibrary1.dll
 C:\Users\fx_bn\Desktop\GIT_Repos\SWT\Calculator\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
+C:\Users\marti\Documents\4.Semester\SWT\Calculator\ClassLibrary1\obj\Debug\Calc.Test.csprojAssemblyReference.cache
+C:\Users\marti\Documents\4.Semester\SWT\Calculator\ClassLibrary1\obj\Debug\Calc.Test.csproj.CoreCompileInputs.cache
+C:\Users\marti\Documents\4.Semester\SWT\Calculator\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Users\marti\Documents\4.Semester\SWT\Calculator\ClassLibrary1\obj\Debug\ClassLibrary1.pdb

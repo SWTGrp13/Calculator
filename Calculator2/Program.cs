@@ -1,6 +1,8 @@
 ﻿using System;
+using System.IO.Ports;
 using System.Linq;
 using Calculator;
+using NUnit.Framework.Constraints;
 
 namespace Calculator2
 {
@@ -13,9 +15,10 @@ namespace Calculator2
             FuncsForCalc calculator = new FuncsForCalc();
             double result = 0;
             double firstNumber = SetNumber("Type your first number : ");
-            double secondNumber = SetNumber("Type your second number: ");
-
+           
             string stringOperation = SetOperation("Enter the operation: + (Add), - (Subtract), * (Multiply), / (Division), % (Mod) or ^ (Power):");
+
+            double secondNumber = SetNumber("Type your second number: ");
 
             switch (stringOperation)
             {
@@ -46,6 +49,7 @@ namespace Calculator2
             }
 
             Console.WriteLine("Result of {0} {1} {2} = {3}", firstNumber, stringOperation, secondNumber, result);
+            calcLoop(calculator);
             Console.ReadKey();
         }
 
@@ -81,5 +85,54 @@ namespace Calculator2
 
             return tempInput;
         }
+
+        private static void calcLoop(FuncsForCalc calculator)
+        {
+
+            string stringOperation = SetOperation("Enter the operation: or stop by typing STOP + (Add), - (Subtract), * (Multiply), / (Division), % (Mod) or ^ (Power):");
+            if (stringOperation == "STOP")
+                return;
+
+            Console.Write("Enter a new number: ");
+            string newNumber = Console.ReadLine();
+          
+            double result = 0;
+            
+            switch (stringOperation)
+                {
+                    case "+":
+                    case "Add":
+                        result = calculator.Add(calculator.getSum(), Double.Parse(newNumber));
+                        break;
+                    case "-":
+                    case "Subtract":
+                        result = calculator.Subtract(calculator.getSum(), Double.Parse(newNumber));
+                        break;
+                    case "*":
+                    case "Multiply":
+                        result = calculator.Multiply(calculator.getSum(), Double.Parse(newNumber));
+                        break;
+                    case "/":
+                    case "division":
+                        result = calculator.Division(calculator.getSum(), Double.Parse(newNumber));
+                        break;
+                    case "^":
+                    case "Power":
+                        result = calculator.Power(calculator.getSum(), Double.Parse(newNumber));
+                        break;
+                    case "%":
+                    case "Mod":
+                        result = calculator.Mod(calculator.getSum(), Double.Parse(newNumber));
+                        break;
+                }
+
+                
+                Console.WriteLine("Result: " + result);
+                
+                calcLoop(calculator);
+
+        }
+
+        
     }
 }

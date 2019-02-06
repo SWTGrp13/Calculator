@@ -9,12 +9,17 @@ namespace Calculator
 {
     public class FuncsForCalc
     {
+        public double getSum()
+        {
+            return sum;
+        }
+
         private double sum;
         
         private void updateSum(double result)
         {
 
-            sum = sum + result;
+            sum = result;
         }
 
         public double Accumulator
