@@ -91,15 +91,14 @@ namespace Calculator2
 
             string stringOperation = SetOperation("Enter the operation, C to reset sum or stop by typing STOP: + (Add), - (Subtract), * (Multiply), / (Division), % (Mod) or ^ (Power):");
             if (stringOperation == "STOP")
-                System.Environment.Exit(1);
+                System.Environment.Exit(0);
             else if (stringOperation == "C")
             {
                 calculator.resetSum();
                 Main(null);
             }
 
-            Console.Write("Enter a new number: ");
-            string newNumber = Console.ReadLine();
+            double newNumber = SetNumber("Enter a new number: ");
           
             double result = 0;
             
@@ -107,27 +106,27 @@ namespace Calculator2
                 {
                     case "+":
                     case "Add":
-                        result = calculator.Add(calculator.getSum(), Double.Parse(newNumber));
+                        result = calculator.Add(calculator.getSum(), newNumber);
                         break;
                     case "-":
                     case "Subtract":
-                        result = calculator.Subtract(calculator.getSum(), Double.Parse(newNumber));
+                        result = calculator.Subtract(calculator.getSum(), newNumber);
                         break;
                     case "*":
                     case "Multiply":
-                        result = calculator.Multiply(calculator.getSum(), Double.Parse(newNumber));
+                        result = calculator.Multiply(calculator.getSum(), newNumber);
                         break;
                     case "/":
                     case "division":
-                        result = calculator.Division(calculator.getSum(), Double.Parse(newNumber));
+                        result = calculator.Division(calculator.getSum(), newNumber);
                         break;
                     case "^":
                     case "Power":
-                        result = calculator.Power(calculator.getSum(), Double.Parse(newNumber));
+                        result = calculator.Power(calculator.getSum(), newNumber);
                         break;
                     case "%":
                     case "Mod":
-                        result = calculator.Mod(calculator.getSum(), Double.Parse(newNumber));
+                        result = calculator.Mod(calculator.getSum(), newNumber);
                         break;
                 }
 

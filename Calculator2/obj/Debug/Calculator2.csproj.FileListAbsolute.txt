@@ -12,14 +12,3 @@ C:\Users\fx_bn\Desktop\GIT_Repos\SWT\Calculator\Calculator_Bwian\Calculator2\obj
 C:\Users\fx_bn\Desktop\GIT_Repos\SWT\Calculator\Calculator_Bwian\Calculator2\obj\Debug\Calculator2.csproj.CoreCompileInputs.cache
 C:\Users\fx_bn\Desktop\GIT_Repos\SWT\Calculator\Calculator_Bwian\Calculator2\obj\Debug\Calculator2.exe
 C:\Users\fx_bn\Desktop\GIT_Repos\SWT\Calculator\Calculator_Bwian\Calculator2\obj\Debug\Calculator2.pdb
-C:\Users\marti\Documents\4.Semester\SWT\Calculator\Calculator2\bin\Debug\Calculator2.exe.config
-C:\Users\marti\Documents\4.Semester\SWT\Calculator\Calculator2\bin\Debug\Calculator2.exe
-C:\Users\marti\Documents\4.Semester\SWT\Calculator\Calculator2\bin\Debug\Calculator2.pdb
-C:\Users\marti\Documents\4.Semester\SWT\Calculator\Calculator2\bin\Debug\nunit.framework.dll
-C:\Users\marti\Documents\4.Semester\SWT\Calculator\Calculator2\bin\Debug\nunit.framework.pdb
-C:\Users\marti\Documents\4.Semester\SWT\Calculator\Calculator2\bin\Debug\nunit.framework.xml
-C:\Users\marti\Documents\4.Semester\SWT\Calculator\Calculator2\obj\Debug\Calculator2.csprojAssemblyReference.cache
-C:\Users\marti\Documents\4.Semester\SWT\Calculator\Calculator2\obj\Debug\Calculator2.csproj.CoreCompileInputs.cache
-C:\Users\marti\Documents\4.Semester\SWT\Calculator\Calculator2\obj\Debug\Calculator2.csproj.CopyComplete
-C:\Users\marti\Documents\4.Semester\SWT\Calculator\Calculator2\obj\Debug\Calculator2.exe
-C:\Users\marti\Documents\4.Semester\SWT\Calculator\Calculator2\obj\Debug\Calculator2.pdb
