@@ -141,9 +141,5 @@ namespace ClassLibrary1
             Assert.That(uutReset.getSum(), Is.EqualTo(0));
         }
 
-        //TEST IF LETTER INSTEAD OF NUMBER
-        //TEST IF WRONG OPERATION
-        //TEST OF "STOP" FORCE-CLOSES
-        
     }
 }
